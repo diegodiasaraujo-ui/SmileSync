@@ -13,6 +13,7 @@ body {
     flex: 1;
     width: 100%;
     padding: 1rem;
+    margin-top: 40px;
     
     
     
@@ -36,7 +37,7 @@ body {
         font-size: 2rem;
 
         & span {
-            color: var(--text);
+            color: var(--text-logo);
         }
     }
 }
@@ -64,10 +65,26 @@ body {
         width: 100%;
         padding: 0.875rem 1rem;
         border-radius: 8px;
+        border: solid 2px var(--border);
     }
 }
 .btn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     padding: 0.875rem 1rem;
     border-radius: 8px;
+    gap: 8px;
+
+    background: var(--bg-card);
+    border: none;
+    
+    & img {
+        width: 1.25rem;
+        width: 1.25rem;
+    }
+   
 }
