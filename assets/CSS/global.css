@@ -10,9 +10,10 @@
     --background-tertiary: #FBFCFC;
 
     --bg-sidebar: #E5F1ED;
-    --bg-card: #236C62;
-    --text-logo: #236C62;
-    --text-nav: #5A6A64;
+    --bg-green: #236C62;
+    --text-green1: #236C62;
+    --text-gray: #5A6A64;
+    --text-label: #253331;
 
     --border: #E1E8E5;
 
@@ -24,7 +25,6 @@
 
 body {
     background: var(--background-primary);
-    display: flex;
     margin: 0;
 }
 
@@ -52,7 +52,7 @@ body {
             font-size: 1.2rem;
 
             & span {
-                color: var(--text-logo);
+                color: var(--text-green1);
             }
         }
     }
@@ -62,11 +62,9 @@ body {
 
         & a {
             text-decoration: none;
-            color: var(--text-nav);
+            color: var(--text-gray);
         }
     }
-
-
 }
 
 .main-content {
