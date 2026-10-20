@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    
+
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    
+    
+    
+}
+.content {
+    display: flex;
+    gap: 0.25rem;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;  
+    
+    
+
+    & img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    & h2 {
+        font-family: var(--ff-Sora);
+        font-size: 2rem;
+
+        & span {
+            color: var(--text);
+        }
+    }
+}
+
+.login-page {
+    width: 100%;
+    background: var(--background-secondary);
+    max-width: 600px;
+    padding: 2.5rem;
+    border-radius: 12px;  
+    border: solid 2px var(--border);  
+
+}
+
+.btn {
+    width: 100%;
+}
