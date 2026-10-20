@@ -8,10 +8,11 @@
     --background-primary: #F4F8F6;
     --background-secondary: #FFFFFF;
     --background-tertiary: #FBFCFC;
-    
+
     --bg-sidebar: #E5F1ED;
     --bg-card: #236C62;
-    --text: #236C62;
+    --text-logo: #236C62;
+    --text-nav: #5A6A64;
 
     --border: #E1E8E5;
 
@@ -20,7 +21,55 @@
     --ff-Roboto-Flex: "Roboto Flex", sans-serif;
 
 }
+
 body {
     background: var(--background-primary);
-    
+    display: flex;
+    margin: 0;
+}
+
+.app-layout {
+    display: flex;
+    min-width: 100vh;
+}
+
+.sidebar {
+    background-color: var(--background-secondary);
+    width: 260px;
+    border-right: solid 2px var(--border);
+    min-height: 100vh;
+    padding: 16px;
+
+    & div {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 20px;
+
+        & h2 {
+            font-family: var(--ff-Sora);
+            font-size: 1.2rem;
+
+            & span {
+                color: var(--text-logo);
+            }
+        }
+    }
+
+    & li {
+        list-style: none;
+
+        & a {
+            text-decoration: none;
+            color: var(--text-nav);
+        }
+    }
+
+
+}
+
+.main-content {
+    flex: 1;
+
 }
