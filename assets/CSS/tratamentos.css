@@ -1,0 +1,59 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.coluna{
+    flex-direction: column;
+}
+.conteiner{
+    margin: 10px 30px 10px;
+}
+.tituloHeader{
+
+    padding: 0 10px 0;   
+    border: 1px solid black;   
+    row-gap: 90%;
+
+}
+.btn-orçamento{
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    gap: 8px;
+
+    background: var(--bg-green);
+    border: none;
+    
+    color: white;
+
+
+    & img {
+        width: 1.25rem;
+        width: 1.25rem;
+    }
+
+    /*
+    & button{
+        text-align: center;
+        padding: 1px;
+        border-radius: 10px;
+        background-color: var(--text-logo);
+        color: white;
+        border: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    & img {
+        width: 1.25rem;
+        width: 1.25rem;
+    }
+    */
+}
+
+
