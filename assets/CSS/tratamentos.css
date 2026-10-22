@@ -22,13 +22,14 @@ body {
 .conteiner{
     width: 95%;
     margin: 10px auto 10px;
+
+
     & div{
         & label{
             color: var(--text-label);
         }
     }
 }
-
 
 .buscaP{
     margin-right: 90px;
@@ -51,21 +52,33 @@ input.input{
 }
 .table-responsive{
 
+    
     overflow: hidden;
     border-radius: 20px;
     border: 2px solid var(--text-gray);
     width: 100%;
-    border-collapse: separate;
-
+    border-spacing: 0px;
     
 
-}
-.table-header {
 
-    background-color: rgb(129, 140, 151);
+}
+
+
+thead{  
+    background-color: var(--background-primary);
+       
+
+}
+tbody{
+    background-color: white;
 }
 th {
     text-align: left;
+    padding: 5px 0px 5px;
+    padding-left: 10px;
+}
+td{
+    padding-left: 10px;
 }
 
 
