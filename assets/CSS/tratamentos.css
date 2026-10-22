@@ -1,3 +1,10 @@
+*{
+    font-family: var(--ff-Roboto-Flex)
+}
+
+.title{
+    color: var(--text-label);
+}
 body {
     display: flex;
     flex-direction: column;
@@ -15,10 +22,29 @@ body {
 .conteiner{
     width: 95%;
     margin: 10px auto 10px;
+    & div{
+        & label{
+            color: var(--text-label);
+        }
+    }
+}
+
+
+.buscaP{
+    margin-right: 90px;
 }
 .input{
-    width: 200%;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
 }
+input.input{
+    width: 37.5rem;
+}
+
 
 .border-round{
     border-radius: 20px;
@@ -35,32 +61,13 @@ body {
 
 }
 .table-header {
+
     background-color: rgb(129, 140, 151);
 }
 th {
     text-align: left;
 }
 
-.btn-orçamento{
-    
-    display: flex;
-    flex-direction: row;
 
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 10px;
-    gap: 8px;
-
-    background: var(--bg-green);
-    border: none;
-    
-    color: white;
-
-
-    & img {
-        width: 1.25rem;
-        width: 1.25rem;
-    }
-}
 
 

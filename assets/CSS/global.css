@@ -11,6 +11,7 @@
 
     --bg-sidebar: #E5F1ED;
     --bg-green: #236C62;
+    --bg-darkgreen: #1d5750;
     --text-green1: #236C62;
     --text-gray: #5A6A64;
     --text-label: #253331;
@@ -119,4 +120,33 @@ li:hover {
     & img {
         filter: brightness(0) saturate(100%) invert(35%) sepia(11%) saturate(2575%) hue-rotate(122deg) brightness(92%) contrast(82%);
     }
+}
+
+.btn-card{
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    gap: 8px;
+
+    background-color: var(--bg-green);
+    border: none;
+    
+    color: white;
+
+
+    & img {
+        width: 1.25rem;
+        width: 1.25rem;
+    }
+}
+.btn-card:hover{
+    cursor: pointer;
+    background-color: var(--bg-darkgreen);
+
 }
