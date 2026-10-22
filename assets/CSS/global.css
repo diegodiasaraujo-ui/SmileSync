@@ -40,6 +40,12 @@ body {
     min-height: 100vh;
     padding: 1rem;
 
+    & h5 {
+        padding: 10px;
+        color: var(--text-gray);
+        font-family: 15px;
+    }
+
     & div {
         display: flex;
         text-align: center;
@@ -59,6 +65,7 @@ body {
 
     & ul {
         font-family: var(--ff-Roboto-Flex);
+        
     }
 
     & li {
@@ -67,6 +74,10 @@ body {
         align-items: center;
         text-align: center;
         list-style: none;
+        font-size: 1.25rem;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 0.5rem;
 
 
         & a {
@@ -84,4 +95,9 @@ body {
 .main-content {
     flex: 1;
 
+}
+
+li:hover {
+    
+    background: rgb(221, 221, 221);
 }
