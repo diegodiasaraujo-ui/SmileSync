@@ -35,17 +35,17 @@ body {
 
 .sidebar {
     background-color: var(--background-secondary);
-    width: 260px;
+    width: 16.25rem;
     border-right: solid 2px var(--border);
     min-height: 100vh;
-    padding: 16px;
+    padding: 1rem;
 
     & div {
         display: flex;
         text-align: center;
         align-items: center;
         gap: 8px;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
 
         & h2 {
             font-family: var(--ff-Sora);
@@ -57,12 +57,26 @@ body {
         }
     }
 
+    & ul {
+        font-family: var(--ff-Roboto-Flex);
+    }
+
     & li {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
         list-style: none;
+
 
         & a {
             text-decoration: none;
             color: var(--text-gray);
+
+            & img {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
         }
     }
 }
