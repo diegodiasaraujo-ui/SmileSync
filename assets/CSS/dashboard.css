@@ -1,0 +1,36 @@
+.main-content {
+    padding: 1.25rem;
+}
+
+.dashboard-header {
+    margin-bottom: 20px;
+
+    & .dashboard-welcome {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    & .dashboard-title {
+        font-family: 'Inter', sans-serif;
+        color: #253331;
+        font-weight: 600;
+    }
+
+    & .calender {
+        display: flex;
+        align-items: center;
+        border: solid 2px var(--border);
+        background-color: #FFFFFF;
+
+        gap: 0.5rem;
+        padding: 10px;
+    }
+
+    & span {
+        font-family: var(--ff-Roboto-Flex);
+        font-size: 10px;
+    }
+}
+
+}
