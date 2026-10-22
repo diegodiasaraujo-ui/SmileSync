@@ -100,8 +100,15 @@ body {
 li:hover {
     background-color: rgb(221, 221, 221);
     border-radius: 0.5rem;
-}
 
+    & span {
+        color: #353434;
+    }
+    
+    & img {
+        filter: brightness(0) saturate(100%) invert(21%) sepia(0%) saturate(4%) hue-rotate(64deg) brightness(98%) contrast(99%);
+    }
+}
 .nav-link.active {
     background-color: #d3e4de;
 
