@@ -12,7 +12,7 @@
     align-items: center;
 
     & .dashboard-title {
-        font-family: 'Inter', sans-serif;
+        font-family: var(--ff-Inter);
         color: #253331;
         font-weight: 600;
     }
@@ -45,7 +45,7 @@
         align-items: center;
         text-align: center;
 
-        font-family: 'Inter', sans-serif;
+        font-family: var(--ff-Inter);
         font-size: 0.875rem;
 
         text-decoration: none;
@@ -64,5 +64,61 @@
 }
 
 .action-card:hover {
-    background-color: rgb(196, 206, 203);
+    background-color: rgb(243, 243, 243);
+}
+
+.dashboard-metrics {
+    display: flex;
+    border: solid 3px var(--border);
+    border-radius: 0.5rem;    
+
+
+    & .metric-card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        background-color: var(--background-secondary);
+        border-right: solid 3px var(--border);
+        text-decoration: none;
+
+        & div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.9375rem;
+        }
+       
+        & .metric-card-title {
+            font-family: var(--ff-Inter);
+            font-weight: 500;
+            font-size: 1rem;
+
+            color: #596A64;
+        }
+
+        & .metric-card-value {
+            font-family: var(--ff-Inter);
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 0.9375rem;
+
+            color: #253331;
+        }
+
+        & .metric-card-description {
+            font-family: var(--ff-Inter);
+            font-weight: 400;
+            font-size: 0.875rem;
+
+            color: #253331;
+        }
+        
+    }
+}
+
+.metric-card:hover {
+    background-color: rgb(243, 243, 243);
+    & img {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(25%) saturate(2235%) hue-rotate(172deg) brightness(93%) contrast(107%);
+    }
 }
