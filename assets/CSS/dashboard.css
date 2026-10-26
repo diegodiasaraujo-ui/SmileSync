@@ -122,9 +122,20 @@
         filter: brightness(0) saturate(100%) invert(0%) sepia(25%) saturate(2235%) hue-rotate(172deg) brightness(93%) contrast(107%);
     }
 }
+.dashboard-grid-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: start;
+}
 
+.dashboard-side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .dashboard-agenda-block {
-    margin-top: 1.25rem;
     background-color: var(--background-secondary);
     border: solid 3px var(--border);
     
@@ -172,6 +183,7 @@
     list-style: none;  
     padding: 1.25rem; 
     border-bottom: solid 3px var(--border);
+    
 
     & .agenda-card {
         display: flex;
@@ -230,5 +242,89 @@
                 font-size: 13px;
             }
         }
+    }
+}
+
+.dashboard-pending-block {
+    background-color: var(--background-secondary);
+    font-family: var(--ff-Inter);
+    border: solid 3px var(--border);
+
+    & .block-header {
+        display: flex;
+        align-items: center;
+        border-bottom: solid 3px var(--border);
+        padding: 1.25rem;
+
+        & .block-title {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #253331;
+        }
+    }
+
+    & .pending-item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding: 1.25rem;
+        font-size: 0.8125rem;
+        color: #253331;
+        border-bottom: solid 3px var(--border);
+        
+        & .pending-item-content {
+            display: flex;
+            flex-direction: column;            
+            gap: 4px;
+
+            & strong {
+                font-weight: 500;
+            }
+
+            & a {
+                text-decoration: none;
+                color: var(--bg-green);
+                font-weight: 600;
+            }
+        }
+    }
+
+    /* Remove a borda do último item para não duplicar com a borda do card */
+    & .pending-item:last-child {
+        border-bottom: none;
+    }
+}
+
+.dashboard-rhythm-block {
+    border: solid 3px var(--border);
+    background-color: #EDF3E1;
+    font-family: var(--ff-Inter);
+    padding: 1.25rem;
+
+    & .rhythm-header {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+        
+
+        & h3 {
+            color: #236C62;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    }
+
+    & p {
+        font-size: 12px;
+        color: #236C62;
+        font-weight: 400;
+    }
+
+    & a {
+        font-size: 12px;
+        font-weight: 500;
+        color: #236C62;
+        text-decoration: none;
     }
 }
