@@ -289,7 +289,7 @@
         }
     }
 
-    /* Remove a borda do último item para não duplicar com a borda do card */
+    
     & .pending-item:last-child {
         border-bottom: none;
     }
