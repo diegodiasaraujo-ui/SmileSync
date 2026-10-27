@@ -1,0 +1,38 @@
+.main-content {
+    padding: 1.25rem;
+    font-family: var(--ff-Inter);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+
+        & .dashboard-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #253331;
+        }
+
+        & .btn-primary {
+            background-color: #236C62;
+            padding: 1rem;
+            color: #FFFFFF;
+            font-size: 14px;
+            gap: 0.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+}
+
+.data-table {
+    background-color: var(--background-secondary);
+    border: solid 2px var(--border);
+    border-radius: 1rem;
+
+   & thead {
+        background-color: #F0F3F3;
+        padding: 10PX;
+   }
+}
