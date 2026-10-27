@@ -6,34 +6,35 @@
     margin-bottom: 30px;
 
     & .dashboard-welcome {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-
-    & .dashboard-title {
-        font-family: var(--ff-Inter);
-        color: #253331;
-        font-weight: 600;
-    }
-
-    & .calender {
         display: flex;
+        justify-content: space-between;
+        text-align: center;
         align-items: center;
-        border: solid 2px var(--border);
-        background-color: #FFFFFF;
 
-        gap: 0.5rem;
-        padding: 10px;
+        & .dashboard-title {
+            font-family: var(--ff-Inter);
+            color: #253331;
+            font-weight: 600;
+        }
+
+        & .calender {
+            display: flex;
+            align-items: center;
+            border: solid 2px var(--border);
+            background-color: #FFFFFF;
+
+            gap: 0.5rem;
+            padding: 10px;
+        }
+
+        & span {
+            font-family: var(--ff-Roboto-Flex);
+            font-size: 10px;
+        }
     }
 
-    & span {
-        font-family: var(--ff-Roboto-Flex);
-        font-size: 10px;
-    }
 }
 
-}
 .dashboard-actions {
     display: flex;
     gap: 0.5rem;
@@ -70,7 +71,7 @@
 .dashboard-metrics {
     display: flex;
     border: solid 3px var(--border);
-    border-radius: 0.5rem;    
+    border-radius: 0.5rem;
 
 
     & .metric-card {
@@ -87,7 +88,7 @@
             justify-content: space-between;
             margin-bottom: 0.9375rem;
         }
-       
+
         & .metric-card-title {
             font-family: var(--ff-Inter);
             font-weight: 500;
@@ -112,16 +113,18 @@
 
             color: #253331;
         }
-        
+
     }
 }
 
 .metric-card:hover {
     background-color: rgb(243, 243, 243);
+
     & img {
         filter: brightness(0) saturate(100%) invert(0%) sepia(25%) saturate(2235%) hue-rotate(172deg) brightness(93%) contrast(107%);
     }
 }
+
 .dashboard-grid-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -135,10 +138,11 @@
     flex-direction: column;
     gap: 1.5rem;
 }
+
 .dashboard-agenda-block {
     background-color: var(--background-secondary);
     border: solid 3px var(--border);
-    
+
 
     & .block-header {
         display: flex;
@@ -147,43 +151,43 @@
         align-items: center;
         border-bottom: solid 3px var(--border);
         padding: 1.25rem;
-    
-    & .block-title {
-        font-family: var(--ff-Inter);
-        font-weight: 600;
-        color: #253331;
-    }
-    
-    & .block-header-title-group {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        gap: 0.5rem;
 
-        & a {
-            display: flex;
-            gap: 0.5rem;
+        & .block-title {
             font-family: var(--ff-Inter);
             font-weight: 600;
-            text-decoration: none;
-            color: #236C62;
-
-            & img {
-            width: 1.25rem;
-            height: 1.25rem;
+            color: #253331;
         }
+
+        & .block-header-title-group {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 0.5rem;
+
+            & a {
+                display: flex;
+                gap: 0.5rem;
+                font-family: var(--ff-Inter);
+                font-weight: 600;
+                text-decoration: none;
+                color: #236C62;
+
+                & img {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
         }
     }
 }
-}
 
-.agenda-item{
+.agenda-item {
     display: flex;
     justify-content: space-between;
-    list-style: none;  
-    padding: 1.25rem; 
+    list-style: none;
+    padding: 1.25rem;
     border-bottom: solid 3px var(--border);
-    
+
 
     & .agenda-card {
         display: flex;
@@ -194,13 +198,13 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
-            
+
             & .agenda-item-hour {
                 font-family: var(--ff-Inter);
                 color: #253331;
                 font-weight: 600;
                 font-size: 1rem;
-                
+
             }
 
             & .agenda-item-duration {
@@ -222,7 +226,7 @@
             border-radius: 50%;
             font-weight: 500;
 
-            
+
         }
 
         & .agenda-item-info {
@@ -236,7 +240,8 @@
                 font-weight: 500;
             }
 
-            & .agenda-item-procedure, .agenda-item-details{
+            & .agenda-item-procedure,
+            .agenda-item-details {
                 font-weight: 400;
                 color: #596A64;
                 font-size: 13px;
@@ -271,10 +276,10 @@
         font-size: 0.8125rem;
         color: #253331;
         border-bottom: solid 3px var(--border);
-        
+
         & .pending-item-content {
             display: flex;
-            flex-direction: column;            
+            flex-direction: column;
             gap: 4px;
 
             & strong {
@@ -289,7 +294,7 @@
         }
     }
 
-    
+
     & .pending-item:last-child {
         border-bottom: none;
     }
@@ -306,7 +311,7 @@
         gap: 0.5rem;
         align-items: center;
         text-align: center;
-        
+
 
         & h3 {
             color: #236C62;
@@ -316,15 +321,144 @@
     }
 
     & p {
-        font-size: 12px;
+        font-size: 0.75rem;
         color: #236C62;
         font-weight: 400;
     }
 
     & a {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 500;
         color: #236C62;
         text-decoration: none;
+    }
+}
+
+.dashboard-footer-section {
+    font-family: var(--ff-Inter);
+    margin-top: 0.9375rem;
+
+    & .dashboard-footer-header {
+        display: flex;
+        justify-content: space-between;
+
+        & .dashboard-section-title {
+            font-size: 1.125rem;
+            color: #253331;
+            font-weight: 600;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #236C62;
+            gap: 0.5rem;
+            font-size: 0.8125rem;
+        }
+
+        & img {
+            filter: brightness(0) saturate(100%) invert(33%) sepia(58%) saturate(397%) hue-rotate(122deg) brightness(96%) contrast(99%);
+        }
+
+    }
+}
+
+.dashboard-priority-container {
+    display: flex;
+    margin-top: 1.25rem;
+    gap: 1.5rem;
+    width: 100%;  
+
+    & .priority-card {
+        flex: 1; 
+        background-color: var(--background-secondary);
+        border-radius: 0.5rem;
+        border: solid 3px var(--border);
+        padding: 1.25rem;
+
+        & .priority-card-header {
+            display: flex;
+            justify-content: space-between;
+
+            & .priority-card-user {
+                display: flex;
+                gap: 1.25rem;
+
+                & .priority-card-avatar {
+                    display: flex;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background-color: #EDF3E1;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    color: #236C62;
+                }
+
+                & .priority-card-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    & .priority-card-name {
+                        color: #253331;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    & .priority-card-procedure {
+                        font-size: 12px;
+                        color: #596A64;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        & .priority-card-body {
+            & .priority-card-status-title {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                margin: 10px 0;
+                color: #253331;
+                font-weight: 500;
+                font-size: 13px;
+            }
+
+            & .priority-card-description {
+                font-size: 12px;
+                font-weight: 400;
+                color: #596A64;
+                margin-bottom: 10px;
+            }
+
+            & .priority-card-meta {
+                font-weight: 400;
+                font-size: 12px;
+                color: #596A64;
+            }
+        }
+
+        & .priority-card-footer {
+            margin-top: 10px;
+
+            & a {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                color: #596A64;
+                font-size: 13px;
+                gap: 0.5rem;
+
+                & img {
+                    width: 1rem;
+                    height: 1rem;
+                    filter: brightness(0) saturate(100%) invert(41%) sepia(8%) saturate(612%) hue-rotate(107deg) brightness(95%) contrast(93%);
+                }
+            }
+        }
     }
 }
