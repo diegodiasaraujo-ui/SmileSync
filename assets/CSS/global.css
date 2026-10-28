@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --background-primary: #F4F8F6;
     --background-secondary: #FFFFFF;
@@ -96,6 +97,7 @@ body {
 
 .main-content {
     flex: 1;
+    padding: 1.25rem;
 
 }
 

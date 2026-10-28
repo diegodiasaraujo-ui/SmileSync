@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@ body {
 }
 .conteiner{
     width: 95%;
-    margin: 10px auto 10px;
+    
 }
 .input{
     width: 200%;

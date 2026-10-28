@@ -1,3 +1,4 @@
+
 *{
     font-family: var(--ff-Roboto-Flex)
 }
@@ -21,7 +22,7 @@ body {
 }
 .conteiner{
     width: 95%;
-    margin: 10px auto 10px;
+
 
 
     & div{
