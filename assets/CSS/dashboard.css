@@ -568,7 +568,6 @@
     box-shadow: 0 0 0 3px rgba(6, 95, 70, 0.1);
 }
 
-/* Botões do rodapé do painel */
 .drawer-actions {
     display: flex;
     justify-content: flex-end;
