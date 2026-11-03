@@ -21,7 +21,7 @@ body {
     flex-direction: column;
 }
 .conteiner{
-    width: 95%;
+    width: 100%;
 
 
 
@@ -56,9 +56,23 @@ input.input{
     
     overflow: hidden;
     border-radius: 20px;
-    border: 2px solid var(--text-gray);
+    border: solid 2px var(--border);
     width: 100%;
     border-spacing: 0px;
+
+    & th {
+            color: #596A64;
+            background-color: #F0F3F3;
+            padding: 0.75rem 1rem;
+            border-bottom: solid 2px var(--border);
+            font-weight: 600;
+        }
+
+        & td {
+            padding: 0.75rem 1rem;
+            border-bottom: solid 2px var(--border);
+            vertical-align: middle;
+        }
     
 
 
@@ -67,12 +81,12 @@ input.input{
 
 thead{  
     background-color: var(--background-primary);
-       
-
 }
 tbody{
     background-color: white;
 }
+
+/*
 th {
     text-align: left;
     padding: 5px 0px 5px;
@@ -84,4 +98,66 @@ td{
 
 
 
+.red-card{
+    background-color: rgba(255,0,0,0.5);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.red-dot{
+    border-radius: 15px;
+    background-color: red;
+    width:
+}
+*/
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-badge--success {
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+.status-badge--warning {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.status-badge--danger {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+.status-badge--neutral {
+    background-color: #F1F5F9;
+}
+
+.etapas-texto {
+    display: block;
+    font-size: 9px;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+.barra-etapas {
+    display: flex;
+    gap: 3px;
+}
+
+.etapa {
+    width: 20px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #dce5e5;
+}
+
+.etapa.concluida {
+    background-color: #247b72;
+}
 
