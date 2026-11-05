@@ -88,7 +88,7 @@
                     <h1 class="dashboard-title">Pacientes</h1>
                 </div>
                 
-                <a href="#" class="btn-primary">+ Novo paciente</a>
+                <button type="button" class="btn-primary" id="open-drawer-btn">+ Novo paciente</button>
             </header>
 
             <section class="patients-section">
@@ -217,6 +217,56 @@
 
         </main>
     </div>
+
+    
+    <div id="patient-drawer" class="drawer-overlay">
+        <div class="drawer-content">
+            <header class="drawer-header">
+                <div>
+                    <h2>Novo paciente</h2>
+                    <p class="drawer-subtitle">Este registro ficará conectado à ficha do paciente e ao histórico da clínica.</p>
+                </div>
+                <button type="button" id="close-drawer" class="drawer-close-btn">&times;</button>
+            </header>
+            
+            <form id="new-patient-form">
+                <div class="input-group">
+                    <label for="patient-name">Nome completo</label>
+                    <input type="text" id="patient-name" placeholder="Nome e sobrenome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="patient-phone">WhatsApp / telefone</label>
+                    <input type="text" id="patient-phone" placeholder="(34) 99999-9999" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="patient-email">E-mail</label>
+                    <input type="email" id="patient-email" placeholder="paciente@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="patient-city">Cidade</label>
+                    <input type="text" id="patient-city" placeholder="Patos de Minas">
+                </div>
+
+                <div class="input-group">
+                    <label for="patient-obs">Observações de contato</label>
+                    <textarea id="patient-obs" placeholder="Preferências do paciente (opcional)" rows="3"></textarea>
+                </div>
+
+                <div class="drawer-actions">
+                    <button type="button" id="cancel-drawer" class="btn-secondary">Voltar</button>
+                    <button type="submit" class="btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="assets/js/pacientes.js"></script>
+</body>
+</html>
 
 </body>
 
